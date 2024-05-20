@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Piedra Papel y Tijera</title>
+</head>
+<body>
+    <header class="contadorPoint">  
+        <!-- Contador de puntos -->
+        <div class="contadores">
+            <span>Tu: </span>
+            <span id="pointUser">0</span>
+        </div>
+        <div class="contadores">
+            <span>PC:</span>
+            <span id="pointPC">0</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="game-items center" id="game-items">
+            <div class="game-item" data-item="papel">
+                <img src="/asests/images/icon-paper.svg" class="game-item-none" alt="papel">
+            </div>
+            <div class="game-item" data-item="tijera">
+                <img src="/asests/images/icon-scissors.svg" class="game-item-none" alt="piedra">
+            </div>
+            <div class="game-item" data-item="piedra">
+                <img src="/asests/images/icon-rock.svg" class="game-item-none" alt="tijera">
+            </div>
+        </div>
+        <!-- Elecciones -->
+        <p class="center" id="resultado">Juega una ves</p>
+        <div class="center">
+            <span>Tu eleccion </span>
+            <span id="user-picked"></span>
+        </div>
+        <div class="center">
+            <span>PC elegio </span>
+            <span id="pc-picked"></span>
+        </div>
+    </main>        
+    <script src="main.js" ></script>
+    </body>
+    </html>
